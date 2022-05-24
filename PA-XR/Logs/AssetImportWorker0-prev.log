@@ -15,12 +15,12 @@ M:/Unity/GitHub/PA-XR_SS22/PA-XR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64108
+52818
 Successfully changed project path to: M:/Unity/GitHub/PA-XR_SS22/PA-XR
 M:/Unity/GitHub/PA-XR_SS22/PA-XR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 309.82 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 1.48 ms.
+Refreshing native plugins compatible for Editor in 918.00 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 10.14 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path D:/Unity Technologies/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path M:/Unity/GitHub/PA-XR_SS22/PA-XR/Assets
@@ -35,56 +35,56 @@ Initialize mono
 Mono path[0] = 'D:/Unity Technologies/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Technologies/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Technologies/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56172
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity Technologies/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012883 seconds.
+Registered in 0.008900 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.32 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 65.12 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.200 seconds
+- Completed reload, in  1.458 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1200ms)
-		BeginReloadAssembly (688ms)
+	ReloadAssembly (1458ms)
+		BeginReloadAssembly (779ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (441ms)
-			LoadAssemblies (689ms)
+		EndReloadAssembly (588ms)
+			LoadAssemblies (779ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (132ms)
+			SetupTypeCache (251ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (176ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (198ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (60ms)
+				RefreshPlugins (65ms)
 				BeforeProcessingInitializeOnLoad (7ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.669724 seconds.
+Registered in 0.634069 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 61.73 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 74.87 ms, found 10 plugins.
 Preloading 1 native plugins for Editor in 0.05 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in I:\Unity\GitHub\PA-XR_SS22\PA-XR\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in I:\Unity\GitHub\PA-XR_SS22\PA-XR\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in M:\Unity\GitHub\PA-XR_SS22\PA-XR\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in M:\Unity\GitHub\PA-XR_SS22\PA-XR\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
   at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
    --- End of inner exception stack trace ---
@@ -98,29 +98,29 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  4.522 seconds
+- Completed reload, in  4.935 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4526ms)
-		BeginReloadAssembly (321ms)
+	ReloadAssembly (4939ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (4147ms)
-			LoadAssemblies (3352ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (4746ms)
+			LoadAssemblies (3484ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (306ms)
+			SetupTypeCache (569ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (519ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (532ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (62ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (107ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -129,14 +129,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.80 ms, found 10 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 3522 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 153.5 MB.
-System memory in use after: 153.7 MB.
+Refreshing native plugins compatible for Editor in 1.26 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3912 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.1 MB.
+System memory in use after: 170.3 MB.
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 3942.
-Total: 3.077600 ms (FindLiveObjects: 0.245700 ms CreateObjectMapping: 0.161300 ms MarkObjects: 2.592500 ms  DeleteObjects: 0.077400 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 4338.
+Total: 4.027300 ms (FindLiveObjects: 0.283500 ms CreateObjectMapping: 0.207800 ms MarkObjects: 3.403400 ms  DeleteObjects: 0.131600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -150,157 +150,146 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Models/Testobjects/Gabel/Gabel.fbx
-  artifactKey: Guid(36607dfea3eed1840bbfc827f2f55706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Gabel/Gabel.fbx using Guid(36607dfea3eed1840bbfc827f2f55706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed2a45a1a774f90f80989d2d222b346') in 0.734662 seconds 
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85d61bc1677c2f588c29379d251a7a74') in 0.052240 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.501444 seconds.
-  path: Assets/Models/Testobjects/Gabel/Gabel.fbx
-  artifactKey: Guid(36607dfea3eed1840bbfc827f2f55706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Gabel/Gabel.fbx using Guid(36607dfea3eed1840bbfc827f2f55706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ca0473debbd0374273d18e1f4e4221') in 0.032057 seconds 
+  Time since last request: 600.532396 seconds.
+  path: Assets/_Course Library
+  artifactKey: Guid(8c8d914a1d5c8496c93eb389dab42fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Course Library using Guid(8c8d914a1d5c8496c93eb389dab42fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4854cc121df444a0d22fbab1cf0310d') in 0.010378 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.459288 seconds.
-  path: Assets/Models/Testobjects/Gabel/Gabel.fbx
-  artifactKey: Guid(36607dfea3eed1840bbfc827f2f55706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Gabel/Gabel.fbx using Guid(36607dfea3eed1840bbfc827f2f55706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e09c851b94978951fff1ae44fa21a3d') in 0.018637 seconds 
+  Time since last request: 4.436801 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(d8af8928c5ec695429e3112a532c2130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(d8af8928c5ec695429e3112a532c2130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acbb7471be80c2c67c34bec84b48bd5') in 0.010601 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.475727 seconds.
-  path: Assets/Models/Testobjects/Glas/Glas.fbx
-  artifactKey: Guid(fdf0ce4364530bf46aa3a8a9cd96f96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Glas/Glas.fbx using Guid(fdf0ce4364530bf46aa3a8a9cd96f96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043df0aa7c74cc29e127dd45222f7255') in 0.049333 seconds 
+  Time since last request: 2.457939 seconds.
+  path: Assets/Prefabs/Shelf.prefab
+  artifactKey: Guid(528e7cfd3d4f62245b169dd1fa4b1eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Shelf.prefab using Guid(528e7cfd3d4f62245b169dd1fa4b1eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81c14dbcefa029ca5b187ca3600ceb4') in 0.054058 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.084500 seconds.
-  path: Assets/Models/Testobjects/Hand/Hand.fbx
-  artifactKey: Guid(c4dcf2ba7b17fb4408c13eaa7972e333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Hand/Hand.fbx using Guid(c4dcf2ba7b17fb4408c13eaa7972e333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '150bd3fd0e39813b9e380c8e6380a099') in 0.042330 seconds 
+  Time since last request: 2.652099 seconds.
+  path: Assets/Prefabs/Room.prefab
+  artifactKey: Guid(5da6a7abe70efd643b86ba78110c2201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Room.prefab using Guid(5da6a7abe70efd643b86ba78110c2201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186d819d15d4a53557b6061911fc3edd') in 0.012960 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.795540 seconds.
-  path: Assets/Models/Testobjects/Hand/Hand.fbx
-  artifactKey: Guid(c4dcf2ba7b17fb4408c13eaa7972e333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Hand/Hand.fbx using Guid(c4dcf2ba7b17fb4408c13eaa7972e333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3df4b59b15c6d792a6960800866eedd') in 0.167376 seconds 
+  Time since last request: 103.975119 seconds.
+  path: Assets/Prefabs/SideTable.prefab
+  artifactKey: Guid(d07746ffc2ee50b4ba139cbb89fd4680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SideTable.prefab using Guid(d07746ffc2ee50b4ba139cbb89fd4680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f55f1859624c3675e76367718c82833') in 0.010719 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.456624 seconds.
-  path: Assets/Models/Testobjects/Hand/Hand.fbx
-  artifactKey: Guid(c4dcf2ba7b17fb4408c13eaa7972e333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Hand/Hand.fbx using Guid(c4dcf2ba7b17fb4408c13eaa7972e333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebc59c27ede964453e640f5824fc913') in 0.100914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.882629 seconds.
-  path: Assets/Models/Testobjects/Lampe/Lampe.fbx
-  artifactKey: Guid(194ee396308f3154b816837f1219c9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Lampe/Lampe.fbx using Guid(194ee396308f3154b816837f1219c9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93a7ce8037082f6de79f4b42c950ebe') in 0.038223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Models/Testobjects/Lampe/LampeAmbient_Occlusion.psd
-  artifactKey: Guid(8897ed68847200d48a3b761fd986f77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Lampe/LampeAmbient_Occlusion.psd using Guid(8897ed68847200d48a3b761fd986f77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63ba1273f629d3af9fb357846c2c2a5') in 0.032618 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Models/Testobjects/Lampe/LampeSurface_Color.psd
-  artifactKey: Guid(c1df28531b1341046b2c5fea1a6628e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Lampe/LampeSurface_Color.psd using Guid(c1df28531b1341046b2c5fea1a6628e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f323a7ceb463ba63d8b3d866802ac848') in 0.017013 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.554671 seconds.
-  path: Assets/Models/Testobjects/Lampe/Lampe.fbx
-  artifactKey: Guid(194ee396308f3154b816837f1219c9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Lampe/Lampe.fbx using Guid(194ee396308f3154b816837f1219c9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eac7ec25ba8e64a23ff7c4ff77fad5a') in 0.019235 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.808074 seconds.
-  path: Assets/Models/Testobjects/Messer/Messer.fbx
-  artifactKey: Guid(80a5baf7ca12ec14c9ef5f5e1dd55b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Messer/Messer.fbx using Guid(80a5baf7ca12ec14c9ef5f5e1dd55b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e9ac68af76a0e66a810ae608464cf3') in 0.055403 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.064719 seconds.
-  path: Assets/Models/Testobjects/Messer/Messer.fbx
-  artifactKey: Guid(80a5baf7ca12ec14c9ef5f5e1dd55b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Messer/Messer.fbx using Guid(80a5baf7ca12ec14c9ef5f5e1dd55b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a712ea743d71791dec0f67e448bff303') in 0.026025 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.244208 seconds.
-  path: Assets/Models/Testobjects/Messer/Messer.fbx
-  artifactKey: Guid(80a5baf7ca12ec14c9ef5f5e1dd55b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Messer/Messer.fbx using Guid(80a5baf7ca12ec14c9ef5f5e1dd55b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f1e77d749140700133080371773ddfb') in 0.019330 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.558498 seconds.
-  path: Assets/Models/Testobjects/Stuhl/Stuhl.1Ambient_Occlusion.psd
-  artifactKey: Guid(2dc6bddff030e2c4badb9d64e7bfbbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Stuhl/Stuhl.1Ambient_Occlusion.psd using Guid(2dc6bddff030e2c4badb9d64e7bfbbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cabee901066ce0b3c7055b88714271f') in 0.021993 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Models/Testobjects/Stuhl/Stuhl.1Surface_Color.psd
-  artifactKey: Guid(394579ec9b8481d42bf13e85490cfdfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Stuhl/Stuhl.1Surface_Color.psd using Guid(394579ec9b8481d42bf13e85490cfdfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e84625b2354a2b63bb6e86036d9314') in 0.023527 seconds 
+  Time since last request: 130.831571 seconds.
+  path: Assets/Models/Testobjects/Hand/CubeAmbient_Occlusion.psd
+  artifactKey: Guid(86e213a34ced42443bc604f166e22d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Testobjects/Hand/CubeAmbient_Occlusion.psd using Guid(86e213a34ced42443bc604f166e22d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599c0fe6082ea071a7c586dbeac1daca') in 0.402027 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000148 seconds.
-  path: Assets/Models/Testobjects/Stuhl/Stuhl.fbx
-  artifactKey: Guid(9948190afab93e542a7654ba98c03c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Stuhl/Stuhl.fbx using Guid(9948190afab93e542a7654ba98c03c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48992b970ddca88632946ec0628c9cbf') in 0.036248 seconds 
+  path: Assets/Models/Testobjects/Hand/CubeSurface_Color.psd
+  artifactKey: Guid(c6ede7ce3d0403c44a250c2dcae65834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Testobjects/Hand/CubeSurface_Color.psd using Guid(c6ede7ce3d0403c44a250c2dcae65834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c081d2856812d34a59b4939b97cb7d6f') in 0.030059 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.204089 seconds.
-  path: Assets/Models/Testobjects/Stuhl/Stuhl.fbx
-  artifactKey: Guid(9948190afab93e542a7654ba98c03c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Stuhl/Stuhl.fbx using Guid(9948190afab93e542a7654ba98c03c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217b1d168193013419c7832c1ac05f58') in 0.020185 seconds 
+  Time since last request: 5.115011 seconds.
+  path: Assets/Models/Testobjects/Messer/MesserAmbient_Occlusion.psd
+  artifactKey: Guid(2d48dc2deb4a11f4d9c8c210be51ea2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Testobjects/Messer/MesserAmbient_Occlusion.psd using Guid(2d48dc2deb4a11f4d9c8c210be51ea2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c88e3312d43395b9ec0ea5af8c43fcc') in 0.030636 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.881226 seconds.
-  path: Assets/Models/Testobjects/Teller/Teller.fbx
-  artifactKey: Guid(f2cbcbc731ef95443a0b3d706ca0a5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Teller/Teller.fbx using Guid(f2cbcbc731ef95443a0b3d706ca0a5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6338f77a51c3f57659675f33a69e8a5e') in 0.043550 seconds 
+  Time since last request: 0.000179 seconds.
+  path: Assets/Models/Testobjects/Messer/MesserSurface_Color.psd
+  artifactKey: Guid(6f803887e3d83e64292638e10c1fceee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Testobjects/Messer/MesserSurface_Color.psd using Guid(6f803887e3d83e64292638e10c1fceee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752120015765a2126143a3965598b6ad') in 0.057827 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Models/Testobjects/Teller/TellerAmbient_Occlusion.psd
-  artifactKey: Guid(857b83b19c3e7ca4098df78382cb3921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Teller/TellerAmbient_Occlusion.psd using Guid(857b83b19c3e7ca4098df78382cb3921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a3256f2f8357e79c40497b6436609b') in 0.022157 seconds 
+  Time since last request: 3.831088 seconds.
+  path: Assets/Models/Testobjects/Gabel/GabelAmbient_Occlusion.psd
+  artifactKey: Guid(2d3b6e576dc1c094f9a7bdb1b453b0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Testobjects/Gabel/GabelAmbient_Occlusion.psd using Guid(2d3b6e576dc1c094f9a7bdb1b453b0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d10f90368052dd1d8e21b9e2a60a34') in 0.028623 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.297553 seconds.
-  path: Assets/Models/Testobjects/Teller/Teller.fbx
-  artifactKey: Guid(f2cbcbc731ef95443a0b3d706ca0a5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Teller/Teller.fbx using Guid(f2cbcbc731ef95443a0b3d706ca0a5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '592c5fcda59d30f904b8f4e4bafc1fb3') in 0.023395 seconds 
+  Time since last request: 0.000187 seconds.
+  path: Assets/Models/Testobjects/Gabel/GabelSurface_Color.psd
+  artifactKey: Guid(c1bf17ae4890f6a4b97bc3edfc24a749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Testobjects/Gabel/GabelSurface_Color.psd using Guid(c1bf17ae4890f6a4b97bc3edfc24a749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb5f24bddfcc9f07ad465490bec67ba') in 0.034127 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 5.461339 seconds.
-  path: Assets/Models/Testobjects/Tisch/Tisch.fbx
-  artifactKey: Guid(88ef95d8f7f8a684fa81b147264c39e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Tisch/Tisch.fbx using Guid(88ef95d8f7f8a684fa81b147264c39e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecdee8468b8195304c84cde6968968dc') in 0.049030 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Models/Testobjects/Tisch/TischAmbient_Occlusion.psd
-  artifactKey: Guid(29cc612d5f84de14e9813ba5ca921469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Tisch/TischAmbient_Occlusion.psd using Guid(29cc612d5f84de14e9813ba5ca921469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60d6b1d4d050378134f0cdbe91165ac') in 0.023493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Models/Testobjects/Tisch/TischSurface_Color.psd
-  artifactKey: Guid(357e066350feee44cacca0da289ad200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Tisch/TischSurface_Color.psd using Guid(357e066350feee44cacca0da289ad200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c188401787e958ef6e1ac9c138231abd') in 0.017225 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.531776 seconds.
-  path: Assets/Models/Testobjects/Tisch/Tisch.fbx
-  artifactKey: Guid(88ef95d8f7f8a684fa81b147264c39e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Tisch/Tisch.fbx using Guid(88ef95d8f7f8a684fa81b147264c39e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f18deecf86bbc0924db7d4f0570be86') in 0.023124 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.269360 seconds.
-  path: Assets/Models/Testobjects/Tisch/Materials/Tisch.mat
-  artifactKey: Guid(311f24e223a273644a85ffeb3fcb30f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Testobjects/Tisch/Materials/Tisch.mat using Guid(311f24e223a273644a85ffeb3fcb30f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad689bb34553be28fb13bf927fd1762a') in 0.029088 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.953404 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.53 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in M:\Unity\GitHub\PA-XR_SS22\PA-XR\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in M:\Unity\GitHub\PA-XR_SS22\PA-XR\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <68089899e4c84456bfc1de3436accf4a>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  6.255 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6263ms)
+		BeginReloadAssembly (1149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (35ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (259ms)
+		EndReloadAssembly (5040ms)
+			LoadAssemblies (4507ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (522ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (164ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.91 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3752 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.8 MB.
+System memory in use after: 157.1 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 4343.
+Total: 4.230200 ms (FindLiveObjects: 0.306200 ms CreateObjectMapping: 0.254800 ms MarkObjects: 3.634300 ms  DeleteObjects: 0.033900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
