@@ -1,5 +1,5 @@
 sceneSetups:
-- path: D:/Unity/GitHub/PA-XR_SS22/PA-XR/Assets/Scenes/Starter Scene.unity
+- path: Assets/Scenes/Starter Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

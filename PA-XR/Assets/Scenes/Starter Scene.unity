@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1957196, g: 0.24869399, b: 0.310267, a: 1}
+  m_IndirectSpecularColor: {r: 0.19568342, g: 0.24862446, b: 0.31020615, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -297,7 +297,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1192
+  m_Name: pb_Mesh-1320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1015,7 +1015,9 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
 --- !u!1 &272196443
 GameObject:
@@ -1028,7 +1030,7 @@ GameObject:
   - component: {fileID: 272196445}
   - component: {fileID: 272196444}
   m_Layer: 0
-  m_Name: TeleportationPoint
+  m_Name: FoodManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1050,8 +1052,7 @@ MonoBehaviour:
   - {fileID: 1140957732}
   - {fileID: 2011377351}
   - {fileID: 1748598956}
-  cloanCounter: 000000000000000000000000
-  foodOnPlate: 0
+  existingFood: {fileID: 0}
 --- !u!4 &272196445
 Transform:
   m_ObjectHideFlags: 0
@@ -1174,7 +1175,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1264
+  m_Name: pb_Mesh-1424
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1338,7 +1339,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1180
+  m_Name: pb_Mesh-1296
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2125,19 +2126,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!1 &510110562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 640787040799808304, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-  m_PrefabInstance: {fileID: 640787041108127826}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &510110565
-MeshFilter:
-  m_ObjectHideFlags: 10
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510110562}
-  m_Mesh: {fileID: 1359148596}
 --- !u!1 &672808130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2176,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1210
+  m_Name: pb_Mesh-1336
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2543,7 +2531,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1252
+  m_Name: pb_Mesh-1412
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3122,7 +3110,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27186
+  m_Name: pb_Mesh22724
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3437,7 +3425,9 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
 --- !u!1 &1487704657
 GameObject:
@@ -3705,50 +3695,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4573583593110364647, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5513a6ec599b5154b875e68f8ad58832, type: 2}
     - target: {fileID: 7639052130166149166, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
       propertyPath: m_Name
       value: TestSphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_TrackPosition
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1487704658}
     - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 272196444}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SpawnFoodSource
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: TeleportFood, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054544465544627049, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
-      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b70231a1f4e784d871bc6ce4bf2cb1, type: 3}
 --- !u!1 &1656550339
@@ -3955,7 +3913,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1276
+  m_Name: pb_Mesh-1436
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4186,46 +4144,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4000743665731299898, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_Size.x
-      value: 0.40691853
-      objectReference: {fileID: 0}
-    - target: {fileID: -4000743665731299898, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_Size.y
-      value: 0.60937536
-      objectReference: {fileID: 0}
-    - target: {fileID: -4000743665731299898, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_Size.z
-      value: 0.35769564
-      objectReference: {fileID: 0}
-    - target: {fileID: -4000743665731299898, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_Center.x
-      value: -0.20243597
-      objectReference: {fileID: 0}
-    - target: {fileID: -4000743665731299898, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_Center.y
-      value: 0.29928738
-      objectReference: {fileID: 0}
-    - target: {fileID: -4000743665731299898, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_Center.z
-      value: 0.0016322434
-      objectReference: {fileID: 0}
+    - target: {fileID: 510110565, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1359148596}
     - target: {fileID: 640787040799808304, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_Name
       value: Trash
       objectReference: {fileID: 0}
     - target: {fileID: 640787040799808305, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_MovementType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 640787040799808305, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
-      propertyPath: m_TrackRotation
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 640787040799808305, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1487704658}
+    - target: {fileID: 640787040799808305, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 272196444}
     - target: {fileID: 640787040799808314, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4236,15 +4170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 640787040799808315, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.397
+      value: 9.923
       objectReference: {fileID: 0}
     - target: {fileID: 640787040799808315, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.341
+      value: -1.281
       objectReference: {fileID: 0}
     - target: {fileID: 640787040799808315, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.94
+      value: 0.847
       objectReference: {fileID: 0}
     - target: {fileID: 640787040799808315, guid: e9959c0757a9f5941a4682b44422b276, type: 3}
       propertyPath: m_LocalRotation.w

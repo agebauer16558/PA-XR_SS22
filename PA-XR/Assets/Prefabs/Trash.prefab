@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4000743665731299898}
   - component: {fileID: 640787040799808310}
   - component: {fileID: 640787040799808305}
-  - component: {fileID: 640787040799808312}
+  - component: {fileID: 510110565}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -622,8 +622,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.40691853, y: 0.60937536, z: 0.35769564}
+  m_Center: {x: -0.20243597, y: 0.29928738, z: 0.0016322434}
 --- !u!54 &640787040799808310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -673,10 +673,10 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 640787040799808312}
-        m_TargetAssemblyTypeName: DestroyFood, Assembly-CSharp
-        m_MethodName: DestroyCopiedGameObjects
-        m_Mode: 5
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: FoodManager, Assembly-CSharp
+        m_MethodName: DestroyFood
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -723,7 +723,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 2
   m_VelocityDamping: 0.4
   m_VelocityScale: 1
   m_AngularVelocityDamping: 0.4
@@ -732,7 +732,7 @@ MonoBehaviour:
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -757,15 +757,11 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
---- !u!114 &640787040799808312
-MonoBehaviour:
+--- !u!33 &510110565
+MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640787040799808304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb98fcafc7df8548830687ec8f14ba2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Mesh: {fileID: 0}
